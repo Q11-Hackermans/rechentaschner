@@ -81,8 +81,11 @@ public class VIEW extends JFrame implements OBSERVER {
 	 * werden). Anschließend wird der Inhalt des Labels neu gesetzt (und dadurch
 	 * aktualisiert).
 	 */
+	
 	@Override
 	public void update() {
+		label.setText(model.toString());
+		
 		
 	}
 

@@ -18,11 +18,13 @@ public class MODEL extends OBSERVABLE {
 	 */
 	public void inkrementieren(int n) {
 		zaehler += n;
+		benachrichtigen();
 
 	}
 
 	public void dekrementieren() {
 		zaehler--;
+		benachrichtigen();
 	}
 
 	/*

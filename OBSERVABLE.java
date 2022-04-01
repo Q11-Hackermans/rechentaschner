@@ -7,6 +7,7 @@ public class OBSERVABLE {
 	// musst du nicht verstehen.
 	// Man fügt etwas hinzu mit: liste.add(Objekt)
 	// Man löscht etwas mit liste.remove(Objekt)
+
 	private List<OBSERVER> liste = new LinkedList<OBSERVER>();
 
 	public void hinzufuegen(OBSERVER o) {
@@ -24,7 +25,9 @@ public class OBSERVABLE {
 	 * Ein Objekt an Stell i bekommt man über: liste.get(i)
 	 */
 	public void benachrichtigen() {
-
+		liste.forEach(a ->{
+			a.update();
+		});
 	}
 
 }

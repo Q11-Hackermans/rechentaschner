@@ -67,12 +67,12 @@ public class CONTROLLER implements ActionListener {
 				 * 
 				 * Funktioniert es, so wird die zahl um den eingegeben Wert erhöht
 				 */
-				int n = Integer.parseInt(JOptionPane.showInputDialog("Welcher Wert soll eingefügt werden?"));
+				int n = Integer.parseInt(JOptionPane.showInputDialog("Welcher Wert soll eingef�gt werden?"));
 
 				// Erhöhe unseren Wert um n. Verwende eine passende Methode im model
 				model.inkrementieren(n);
 			} catch (NumberFormatException ne) {
-				JOptionPane.showMessageDialog(null, "Bitte eine natürliche Zahl eingeben");
+				JOptionPane.showMessageDialog(null, "Bitte eine nat�rliche Zahl eingeben");
 			}
 
 		}
