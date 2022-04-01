@@ -25,7 +25,7 @@ public class OBSERVABLE {
 	 * Ein Objekt an Stell i bekommt man über: liste.get(i)
 	 */
 	public void benachrichtigen() {
-		liste.forEach(a ->{
+		liste.forEach(a -> {
 			a.update();
 		});
 	}

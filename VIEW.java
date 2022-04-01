@@ -81,12 +81,12 @@ public class VIEW extends JFrame implements OBSERVER {
 	 * werden). Anschließend wird der Inhalt des Labels neu gesetzt (und dadurch
 	 * aktualisiert).
 	 */
-	
+
 	@Override
 	public void update() {
-		label.setText(model.toString());
-		
-		
+
+		label.setText(model.inhaltHolen().toString());
+
 	}
 
 	/*
@@ -105,13 +105,12 @@ public class VIEW extends JFrame implements OBSERVER {
 	@Override
 	public void add(Object o) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
 	public void remove(Object o) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
