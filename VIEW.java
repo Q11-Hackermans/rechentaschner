@@ -112,9 +112,8 @@ public class VIEW extends JFrame implements OBSERVER {
 	}
 
 	@Override
-	public void get(int i) {
-		// TODO Auto-generated method stub
-		
+	public Object get(int i) {
+		return null;
 	}
 
 }

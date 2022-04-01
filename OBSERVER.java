@@ -10,6 +10,6 @@ public interface OBSERVER {
 	
 	public void remove(Object o);
 	
-	public void get(int i);
+	public Object get(int i);
 	
 }
