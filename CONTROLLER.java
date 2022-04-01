@@ -26,12 +26,13 @@ public class CONTROLLER implements ActionListener {
 	 * ein. Zuletzt registriert er sich bei den beiden Buttons der View (dort werden
 	 * passende Methoden zur Verfügung gestellt).
 	 */
-	
+
 	public CONTROLLER() {
 		model = new MODEL();
 		view = new VIEW(model);
 		// Füge dem model die view als Observer über die entsprechende Methode des
 		// models hinzu
+		model.hinzufuegen(view);
 
 		// Man muss die ActionListener anmelden.
 		view.addPlusListener(this);
@@ -64,12 +65,12 @@ public class CONTROLLER implements ActionListener {
 				 * 
 				 * Funktioniert es, so wird die zahl um den eingegeben Wert erhöht
 				 */
-				int n = Integer.parseInt(JOptionPane.showInputDialog("Welcher Wert soll eingef�gt werden?"));
+				int n = Integer.parseInt(JOptionPane.showInputDialog("Welcher Wert soll eingef�gt werden?"));
 
 				// Erhöhe unseren Wert um n. Verwende eine passende Methode im model
 				model.inkrementieren(n);
 			} catch (NumberFormatException ne) {
-				JOptionPane.showMessageDialog(null, "Bitte eine nat�rliche Zahl eingeben");
+				JOptionPane.showMessageDialog(null, "Bitte eine nat�rliche Zahl eingeben");
 			}
 
 		}
