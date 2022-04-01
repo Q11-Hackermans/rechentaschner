@@ -14,12 +14,11 @@ import java.awt.event.*;
  * zu können) und implementiert das Interface OBSERVER, um vom Model benachrichtigt
  * werden zu können, wenn ein Update ansteht. Mehr dazu im Skript.
  */
-public class VIEW extends JFrame implements OBSERVER
-{
-    private int zahl = 0;
-    private MODEL ?;
-    private JLabel label;
-    private ? buttonPlus;
+public class VIEW extends JFrame implements OBSERVER {
+	private int zahl = 0;private MODEL?;
+	private JLabel label;
+
+	private ? buttonPlus;
     private ? buttonMinus;
     
     /*
@@ -70,32 +69,31 @@ public class VIEW extends JFrame implements OBSERVER
         ?
         
     }
-    
-    /*
-     * In der Methode update wird festgelegt, was passieren soll, wen ein Update
-     * ansteht. In diesem Fall soll der aktuelle Wert des Zählers vom Model geholt
-     * werden, in ein int verwandelt werden (er wird im Beispiel allgemein als "Object" 
-     * gesendet und muss erst wieder in das passende Datenformat gebracht werden).
-     * Anschließend wird der Inhalt des Labels neu gesetzt (und dadurch aktualisiert).
-     */
-    public ? update()
+
+	/*
+	 * In der Methode update wird festgelegt, was passieren soll, wen ein Update
+	 * ansteht. In diesem Fall soll der aktuelle Wert des Zählers vom Model geholt
+	 * werden, in ein int verwandelt werden (er wird im Beispiel allgemein als
+	 * "Object" gesendet und muss erst wieder in das passende Datenformat gebracht
+	 * werden). Anschließend wird der Inhalt des Labels neu gesetzt (und dadurch
+	 * aktualisiert).
+	 */
+	public ? update()
     {
         
     }
-    
-    /*
-     * Die letzten beiden Methoden dienen dazu, dass sich ein ActionListener 
-     * (in unserem Fall der Controller) an einem Button "anmelden" kann, um dann
-     * informiert zu werden, wenn er gedrückt wird.
-     */
-    public void addPlusListener(ActionListener listenForPlusButton)
-    {
-        buttonPlus.addActionListener(listenForPlusButton);
-    }
-    
-    public void addMinusListener(ActionListener listenForMinusButton)
-    {
-        buttonMinus.addActionListener(listenForMinusButton);
-    }
-    
+
+	/*
+	 * Die letzten beiden Methoden dienen dazu, dass sich ein ActionListener (in
+	 * unserem Fall der Controller) an einem Button "anmelden" kann, um dann
+	 * informiert zu werden, wenn er gedrückt wird.
+	 */
+	public void addPlusListener(ActionListener listenForPlusButton) {
+		buttonPlus.addActionListener(listenForPlusButton);
+	}
+
+	public void addMinusListener(ActionListener listenForMinusButton) {
+		buttonMinus.addActionListener(listenForMinusButton);
+	}
+
 }
