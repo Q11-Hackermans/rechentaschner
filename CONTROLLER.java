@@ -29,6 +29,7 @@ public class CONTROLLER implements ActionListener {
 	 * ein. Zuletzt registriert er sich bei den beiden Buttons der View (dort werden
 	 * passende Methoden zur Verfügung gestellt).
 	 */
+	
 	public CONTROLLER() {
 		model = new MODEL();
 		view = new VIEW(model);
