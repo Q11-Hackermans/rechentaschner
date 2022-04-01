@@ -15,6 +15,7 @@ import javax.swing.*;
  * mouseClicked(MouseEvent e) verwenden. Ein ActionListener erkennt sie auch 
  * (da MouseListener von ActionListener erbt).
  */
+
 public class CONTROLLER implements ActionListener {
 	private VIEW view;
 	private MODEL model;
@@ -80,3 +81,4 @@ public class CONTROLLER implements ActionListener {
 	}
 
 }
+

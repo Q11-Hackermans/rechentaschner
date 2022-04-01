@@ -34,6 +34,7 @@ public class VIEW extends JFrame implements OBSERVER {
 
 	public VIEW(MODEL m) {
 		model = m;
+		m.hinzufuegen(this);
 
 		JPanel panel = new JPanel();
 
@@ -50,13 +51,13 @@ public class VIEW extends JFrame implements OBSERVER {
 		// Das Label wird zum Panel hinzugefügt.
 		panel.add(label);
 
-		// Die Buttons werden erstellt und dem Panel hinzugefügt.
+		// Die Buttons werden erstellt und dem Panel hinzugef�gt.
 		buttonPlus = new JButton("+");
-		// Der Button wird dem panel hinzugefügt
+		// Der Button wird dem panel hinzugef�gt
 		panel.add(buttonPlus);
 
 		buttonMinus = new JButton("-");
-		// Der Button wird dem panel hinzugefügt
+		// Der Button wird dem panel hinzugef�gt
 		panel.add(buttonMinus);
 
 		// Das Panel wird in den Bilderrahmen/JFrame gehängt. Davor wird es nicht
@@ -84,15 +85,13 @@ public class VIEW extends JFrame implements OBSERVER {
 
 	@Override
 	public void update() {
-
 		label.setText(model.inhaltHolen().toString());
-
 	}
 
 	/*
 	 * Die letzten beiden Methoden dienen dazu, dass sich ein ActionListener (in
 	 * unserem Fall der Controller) an einem Button "anmelden" kann, um dann
-	 * informiert zu werden, wenn er gedrückt wird.
+	 * informiert zu werden, wenn er gedr�ckt wird.
 	 */
 	public void addPlusListener(ActionListener listenForPlusButton) {
 		buttonPlus.addActionListener(listenForPlusButton);
@@ -101,21 +100,4 @@ public class VIEW extends JFrame implements OBSERVER {
 	public void addMinusListener(ActionListener listenForMinusButton) {
 		buttonMinus.addActionListener(listenForMinusButton);
 	}
-
-	@Override
-	public void add(Object o) {
-		// TODO Auto-generated method stub
-	}
-
-	@Override
-	public void remove(Object o) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public Object get(int i) {
-		return null;
-	}
-
 }
