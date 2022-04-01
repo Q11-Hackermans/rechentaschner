@@ -99,4 +99,22 @@ public class VIEW extends JFrame implements OBSERVER {
 		buttonMinus.addActionListener(listenForMinusButton);
 	}
 
+	@Override
+	public void add(Object o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void remove(Object o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void get(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
