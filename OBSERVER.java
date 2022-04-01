@@ -6,10 +6,4 @@ public interface OBSERVER {
 	
 	public void update();
 	
-	public void add(Object o);
-	
-	public void remove(Object o);
-	
-	public Object get(int i);
-	
 }

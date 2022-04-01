@@ -24,8 +24,9 @@ public class OBSERVABLE {
 	 * mit einer for-Schleife und ruft auf jedem Objekt die update() Funktion auf
 	 * Ein Objekt an Stell i bekommt man über: liste.get(i)
 	 */
+	
 	public void benachrichtigen() {
-		liste.forEach(a ->{
+		liste.forEach(a -> {
 			a.update();
 		});
 	}

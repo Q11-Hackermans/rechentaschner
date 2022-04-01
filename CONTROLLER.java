@@ -15,13 +15,10 @@ import javax.swing.*;
  * mouseClicked(MouseEvent e) verwenden. Ein ActionListener erkennt sie auch 
  * (da MouseListener von ActionListener erbt).
  */
+
 public class CONTROLLER implements ActionListener {
 	private VIEW view;
 	private MODEL model;
-
-	public static void main(String[] args) {
-
-	}
 
 	/*
 	 * Der Controller erstellt ein Model und eine View und übergibt dabei das Model
@@ -83,3 +80,4 @@ public class CONTROLLER implements ActionListener {
 	}
 
 }
+
