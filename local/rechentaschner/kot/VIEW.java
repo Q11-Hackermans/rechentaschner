@@ -101,7 +101,8 @@ public class VIEW extends JFrame implements OBSERVER {
 	}
 
 	public void switchLabels() {
-
+		this.funMode = !this.funMode;
+		if (!funMode){
 			buttonPlus.setText("-");
 			buttonMinus.setText("+");
 			funMode = false;
