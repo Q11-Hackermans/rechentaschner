@@ -19,6 +19,7 @@ public class VIEW extends JFrame implements OBSERVER {
 	private int zahl = 0;
 	private MODEL model;
 	private JLabel label;
+	private boolean funMode = false;
 
 	private JButton buttonPlus;
 	private JButton buttonMinus;
@@ -92,6 +93,16 @@ public class VIEW extends JFrame implements OBSERVER {
 	@Override
 	public void update() {
 		label.setText(model.inhaltHolen().toString());
+	}
+
+	public void switchLabels() {
+		if (!funMode) {
+			buttonPlus.setText("-");
+			buttonMinus.setText("+");
+		} else {
+			buttonPlus.setText("+");
+			buttonMinus.setText("-");
+		}
 	}
 
 	/*
