@@ -38,6 +38,7 @@ public class CONTROLLER implements ActionListener {
 		// Man muss die ActionListener anmelden.
 		view.addPlusListener(this);
 		view.addMinusListener(this);
+		view.addFunListener(this);
 	}
 
 	/*
@@ -54,6 +55,8 @@ public class CONTROLLER implements ActionListener {
 	 * 
 	 */
 	public void actionPerformed(ActionEvent e) {
+		
+		System.out.println(e.getActionCommand());
 
 		// Falls der gedrückte Button der + Button ist.
 		if (e.getActionCommand().equals("+")) {
