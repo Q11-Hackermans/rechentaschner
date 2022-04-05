@@ -1,3 +1,4 @@
+package local.rechentaschner.kot;
 /*
  * Die Klasse MODEL enthält alle Daten. Da sie die View (bzw.
  * allgemein die OBSERVER) über Updates informieren muss, erbt

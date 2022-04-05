@@ -1,3 +1,4 @@
+package local.rechentaschner.kot;
 
 //Dieser Import stellt eine vorprogrammierte Liste zur Verfügung.
 import java.util.*;

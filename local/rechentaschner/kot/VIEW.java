@@ -1,3 +1,4 @@
+package local.rechentaschner.kot;
 /*
  * Die hier importieren Pakete sind wichtig, um die grafische Darstellung
  * zu ermöglichen. Das event-Paket wird benötigt, damit man Methoden schreiben

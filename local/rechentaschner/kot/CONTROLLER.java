@@ -1,3 +1,4 @@
+package local.rechentaschner.kot;
 /*
  * Das erste importierte Paket ist wichtig, da der Controller ohne das event-Paket 
  * nicht wüsste, was ein ActionListener ist. Das zweite Paket braucht man nur, wenn
