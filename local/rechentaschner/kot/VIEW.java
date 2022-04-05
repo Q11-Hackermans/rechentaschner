@@ -64,7 +64,7 @@ public class VIEW extends JFrame implements OBSERVER {
 		panel.add(buttonMinus);
 
 		// Fun button
-		buttonFun = new JButton("hm");
+		buttonFun = new JButton("🔄");
 		panel.add(buttonFun);
 
 		// Das Panel wird in den Bilderrahmen/JFrame gehängt. Davor wird es nicht
@@ -98,6 +98,7 @@ public class VIEW extends JFrame implements OBSERVER {
 	}
 
 	public void switchLabels() {
+		this.funMode = !this.funMode;
 		if (!funMode) {
 			buttonPlus.setText("-");
 			buttonMinus.setText("+");

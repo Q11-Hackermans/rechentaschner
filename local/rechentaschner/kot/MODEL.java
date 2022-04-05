@@ -37,4 +37,6 @@ public class MODEL extends OBSERVABLE {
 	public Object inhaltHolen() {
 		return zaehler;
 	}
+
+	
 }

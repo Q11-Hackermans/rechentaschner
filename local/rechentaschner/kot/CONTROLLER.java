@@ -38,6 +38,7 @@ public class CONTROLLER implements ActionListener {
 		// Man muss die ActionListener anmelden.
 		view.addPlusListener(this);
 		view.addMinusListener(this);
+		view.addFunListener(this);
 	}
 
 	/*
@@ -81,7 +82,7 @@ public class CONTROLLER implements ActionListener {
 			model.dekrementieren();
 		}
 		
-		if(e.getActionCommand().equals("hm")) {
+		if(e.getActionCommand().equals("🔄")) {
 			view.switchLabels();
 		}
 	}
