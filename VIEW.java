@@ -51,13 +51,13 @@ public class VIEW extends JFrame implements OBSERVER {
 		// Das Label wird zum Panel hinzugefügt.
 		panel.add(label);
 
-		// Die Buttons werden erstellt und dem Panel hinzugef�gt.
+		// Die Buttons werden erstellt und dem Panel hinzugefügt.
 		buttonPlus = new JButton("+");
-		// Der Button wird dem panel hinzugef�gt
+		// Der Button wird dem panel hinzugefügt
 		panel.add(buttonPlus);
 
 		buttonMinus = new JButton("-");
-		// Der Button wird dem panel hinzugef�gt
+		// Der Button wird dem panel hinzugefügt
 		panel.add(buttonMinus);
 
 		// Das Panel wird in den Bilderrahmen/JFrame gehängt. Davor wird es nicht
@@ -91,7 +91,7 @@ public class VIEW extends JFrame implements OBSERVER {
 	/*
 	 * Die letzten beiden Methoden dienen dazu, dass sich ein ActionListener (in
 	 * unserem Fall der Controller) an einem Button "anmelden" kann, um dann
-	 * informiert zu werden, wenn er gedr�ckt wird.
+	 * informiert zu werden, wenn er gedrückt wird.
 	 */
 	public void addPlusListener(ActionListener listenForPlusButton) {
 		buttonPlus.addActionListener(listenForPlusButton);
