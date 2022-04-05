@@ -65,7 +65,7 @@ public class CONTROLLER implements ActionListener {
 				 * 
 				 * Funktioniert es, so wird die zahl um den eingegeben Wert erhöht
 				 */
-				int n = Integer.parseInt(JOptionPane.showInputDialog("Welcher Wert soll eingef�gt werden?"));
+				int n = Integer.parseInt(JOptionPane.showInputDialog("Welcher Wert soll eingefügt werden?"));
 
 				// Erhöhe unseren Wert um n. Verwende eine passende Methode im model
 				model.inkrementieren(n);
