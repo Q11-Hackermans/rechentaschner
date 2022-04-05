@@ -121,10 +121,12 @@ public class VIEW extends JFrame implements OBSERVER {
 	 * informiert zu werden, wenn er gedrückt wird.
 	 */
 	public void addPlusListener(ActionListener listenForPlusButton) {
+		buttonPlus.setActionCommand("+");
 		buttonPlus.addActionListener(listenForPlusButton);
 	}
 
 	public void addMinusListener(ActionListener listenForMinusButton) {
+		buttonPlus.setActionCommand("-");
 		buttonMinus.addActionListener(listenForMinusButton);
 	}
 
