@@ -107,11 +107,9 @@ public class VIEW extends JFrame implements OBSERVER {
 		if (!funMode){
 			buttonPlus.setText("-");
 			buttonMinus.setText("+");
-			funMode = false;
 		} else {
 			buttonPlus.setText("+");
 			buttonMinus.setText("-");
-			funMode = true;
 		}
 	}
 
