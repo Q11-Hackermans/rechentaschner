@@ -126,7 +126,7 @@ public class VIEW extends JFrame implements OBSERVER {
 	}
 
 	public void addMinusListener(ActionListener listenForMinusButton) {
-		buttonPlus.setActionCommand("-");
+		buttonMinus.setActionCommand("-");
 		buttonMinus.addActionListener(listenForMinusButton);
 	}
 
