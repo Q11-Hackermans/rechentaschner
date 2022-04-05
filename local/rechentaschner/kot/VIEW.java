@@ -77,6 +77,8 @@ public class VIEW extends JFrame implements OBSERVER {
 		// Das JFrane soll für den Nutzer sichtbar sein.
 		// Verwende die Methodethis.setVisible(true oder false);
 		this.setVisible(true);
+		// Set title
+		this.setTitle("The Rechentaschner");
 
 	}
 
