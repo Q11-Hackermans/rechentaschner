@@ -70,7 +70,7 @@ public class CONTROLLER implements ActionListener {
 				// Erhöhe unseren Wert um n. Verwende eine passende Methode im model
 				model.inkrementieren(n);
 			} catch (NumberFormatException ne) {
-				JOptionPane.showMessageDialog(null, "Bitte eine nat�rliche Zahl eingeben");
+				JOptionPane.showMessageDialog(null, "Bitte eine natürliche Zahl eingeben");
 			}
 
 		}
