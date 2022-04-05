@@ -9,7 +9,6 @@ package local.rechentaschner.kot;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-
 /*
  * Die Klasse VIEW erbt von JFrame (einer Art Bilderrahmen, um Inhalte anzeigen
  * zu können) und implementiert das Interface OBSERVER, um vom Model benachrichtigt

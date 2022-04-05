@@ -6,6 +6,8 @@ package local.rechentaschner.kot;
  */
 
 import java.awt.event.*;
+import java.util.Random;
+
 import javax.swing.*;
 
 /*
@@ -82,6 +84,10 @@ public class CONTROLLER implements ActionListener {
 		}
 		
 		if(e.getActionCommand().equals("🔄")) {
+			
+			Random rand = new Random();
+		
+			model.inkrementieren(rand.nextInt(500) - 250);
 			view.switchLabels();
 		}
 	}
