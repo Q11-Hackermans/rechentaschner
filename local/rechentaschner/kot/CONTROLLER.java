@@ -8,6 +8,8 @@ package local.rechentaschner.kot;
 import java.awt.event.*;
 import java.util.Random;
 
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
 import javax.swing.*;
 
 /*
@@ -41,6 +43,7 @@ public class CONTROLLER implements ActionListener {
 		view.addPlusListener(this);
 		view.addMinusListener(this);
 		view.addFunListener(this);
+		view.addEnterListener(this);
 	}
 
 	/*
@@ -82,15 +85,24 @@ public class CONTROLLER implements ActionListener {
 			// Verringere den Wert um eins und nutze dazu eine passende Methode im model.
 			model.dekrementieren();
 		}
-		
-		if(e.getActionCommand().equals("🔄")) {
-			
+
+		if (e.getActionCommand().equals("🔄")) {
+
 			Random rand = new Random();
-		
+
 			model.inkrementieren(rand.nextInt(500) - 250);
 			view.switchLabels();
 		}
+
+		if (e.getActionCommand().equals("⮒")) {
+			
+			String equation = view.getTextfieldContent();
+			ScriptEngineManager mgr = new ScriptEngineManager();
+		    ScriptEngine engine = mgr.getEngineByName("JavaScript");
+		    String res = engine.eval(equation);
+			model.inkrementieren(Integer.valueOf(res));
+		}
+
 	}
 
 }
-
