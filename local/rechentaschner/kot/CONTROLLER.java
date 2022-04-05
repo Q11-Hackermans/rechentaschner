@@ -55,7 +55,6 @@ public class CONTROLLER implements ActionListener {
 	 * 
 	 */
 	public void actionPerformed(ActionEvent e) {
-
 		// Falls der gedrückte Button der + Button ist.
 		if (e.getActionCommand().equals("+")) {
 			try {
