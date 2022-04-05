@@ -78,6 +78,8 @@ public class VIEW extends JFrame implements OBSERVER {
 		// Das JFrane soll für den Nutzer sichtbar sein.
 		// Verwende die Methodethis.setVisible(true oder false);
 		this.setVisible(true);
+		// Set title
+		this.setTitle("The Rechentaschner");
 
 	}
 
@@ -119,6 +121,6 @@ public class VIEW extends JFrame implements OBSERVER {
 	}
 
 	public void addFunListener(ActionListener listenForFunButton) {
-		buttonMinus.addActionListener(listenForFunButton);
+		buttonFun.addActionListener(listenForFunButton);
 	}
 }

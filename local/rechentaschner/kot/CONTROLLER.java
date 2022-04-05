@@ -80,6 +80,10 @@ public class CONTROLLER implements ActionListener {
 			// Verringere den Wert um eins und nutze dazu eine passende Methode im model.
 			model.dekrementieren();
 		}
+		
+		if(e.getActionCommand().equals("hm")) {
+			view.switchLabels();
+		}
 	}
 
 }
