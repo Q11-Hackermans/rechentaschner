@@ -36,7 +36,10 @@ public class VIEW extends JFrame implements OBSERVER {
 	 */
 
 	public VIEW(MODEL m) {
+		funMode = true;
+		
 		model = m;
+		
 		m.hinzufuegen(this);
 
 		JPanel panel = new JPanel();
@@ -98,12 +101,14 @@ public class VIEW extends JFrame implements OBSERVER {
 	}
 
 	public void switchLabels() {
-		if (!funMode) {
+		if (funMode) {
 			buttonPlus.setText("-");
 			buttonMinus.setText("+");
+			funMode = false;
 		} else {
 			buttonPlus.setText("+");
 			buttonMinus.setText("-");
+			funMode = true;
 		}
 	}
 
