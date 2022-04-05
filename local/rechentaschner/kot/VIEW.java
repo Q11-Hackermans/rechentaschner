@@ -24,6 +24,10 @@ public class VIEW extends JFrame implements OBSERVER {
 	private JButton buttonMinus;
 	private JButton buttonFun;
 
+	private JButton buttonEnter;	
+	private JTextField intInput;
+
+
 	/*
 	 * Wenn eine View erstellt wird, muss ein zugehöriges Model angegeben werden.
 	 * Das erledigt bei uns der Controller. Das Panel, das erstellt wird, kann man
@@ -68,6 +72,14 @@ public class VIEW extends JFrame implements OBSERVER {
 		// Fun button
 		buttonFun = new JButton("🔄");
 		panel.add(buttonFun);
+
+		// crazy calc (!!!wip)
+
+		buttonEnter = new JButton("⮒");
+		panel.add(buttonEnter);
+		
+		intInput = new JTextField("Your Number",10);
+		panel.add(intInput);
 
 		// Das Panel wird in den Bilderrahmen/JFrame gehängt. Davor wird es nicht
 		// angezeigt !
@@ -130,4 +142,16 @@ public class VIEW extends JFrame implements OBSERVER {
 	public void addFunListener(ActionListener listenForFunButton) {
 		buttonFun.addActionListener(listenForFunButton);
 	}
+
+
+	public void addEnterListener(ActionListener listenForEnterButton) {
+		buttonFun.addActionListener(listenForEnterButton);
+	}
+	
+	public String getTextFieldContent(){
+		return intInput.getText();
+	}
+
 }
+
+
