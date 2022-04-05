@@ -22,6 +22,7 @@ public class VIEW extends JFrame implements OBSERVER {
 
 	private JButton buttonPlus;
 	private JButton buttonMinus;
+	private JButton buttonFun;
 
 	/*
 	 * Wenn eine View erstellt wird, muss ein zugehöriges Model angegeben werden.
@@ -60,6 +61,10 @@ public class VIEW extends JFrame implements OBSERVER {
 		buttonMinus = new JButton("-");
 		// Der Button wird dem panel hinzugefügt
 		panel.add(buttonMinus);
+
+		// Fun button
+		buttonFun = new JButton("hm");
+		panel.add(buttonFun);
 
 		// Das Panel wird in den Bilderrahmen/JFrame gehängt. Davor wird es nicht
 		// angezeigt !
@@ -100,5 +105,9 @@ public class VIEW extends JFrame implements OBSERVER {
 
 	public void addMinusListener(ActionListener listenForMinusButton) {
 		buttonMinus.addActionListener(listenForMinusButton);
+	}
+
+	public void addFunListener(ActionListener listenForFunButton) {
+		buttonMinus.addActionListener(listenForFunButton);
 	}
 }
