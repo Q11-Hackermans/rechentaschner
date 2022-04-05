@@ -108,6 +108,6 @@ public class VIEW extends JFrame implements OBSERVER {
 	}
 
 	public void addFunListener(ActionListener listenForFunButton) {
-		buttonMinus.addActionListener(listenForFunButton);
+		buttonFun.addActionListener(listenForFunButton);
 	}
 }
