@@ -99,11 +99,14 @@ public class CONTROLLER implements ActionListener {
 		if (e.getActionCommand().equals("⮒")) {
 			
 			String equation = view.getTextFieldContent();
+			System.out.println(equation);
 			ScriptEngineManager mgr = new ScriptEngineManager();
 		    ScriptEngine engine = mgr.getEngineByName("JavaScript");
-		    String res = "";
-			try {
-				res = (String) engine.eval(equation);
+		    int res = 0;
+		    try {
+		    	System.out.println(engine.eval(equation));
+		    	res = (int) engine.eval(equation);
+		    	System.out.println(res);
 			} catch (ScriptException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();

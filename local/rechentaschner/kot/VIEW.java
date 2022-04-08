@@ -25,7 +25,7 @@ public class VIEW extends JFrame implements OBSERVER {
 	private JButton buttonFun;
 
 	private JButton buttonEnter;	
-	private JTextField intInput;
+	private JTextField calculationInput;
 
 
 	/*
@@ -78,8 +78,8 @@ public class VIEW extends JFrame implements OBSERVER {
 		buttonEnter = new JButton("⮒");
 		panel.add(buttonEnter);
 		
-		intInput = new JTextField("Your Number",10);
-		panel.add(intInput);
+		calculationInput = new JTextField(10);
+		panel.add(calculationInput);
 
 		// Das Panel wird in den Bilderrahmen/JFrame gehängt. Davor wird es nicht
 		// angezeigt !
@@ -149,7 +149,7 @@ public class VIEW extends JFrame implements OBSERVER {
 	}
 	
 	public String getTextFieldContent(){
-		return intInput.getText();
+		return calculationInput.getText();
 	}
 
 }
