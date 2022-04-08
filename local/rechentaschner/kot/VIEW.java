@@ -114,14 +114,14 @@ public class VIEW extends JFrame implements OBSERVER {
 	}
 
 	public void switchLabels() {
-		this.funMode = !this.funMode;
-		if (!funMode){
+		if (funMode){
 			buttonPlus.setText("-");
 			buttonMinus.setText("+");
 		} else {
 			buttonPlus.setText("+");
 			buttonMinus.setText("-");
 		}
+		funMode = !funMode;
 	}
 
 	/*
@@ -145,7 +145,7 @@ public class VIEW extends JFrame implements OBSERVER {
 
 
 	public void addEnterListener(ActionListener listenForEnterButton) {
-		buttonFun.addActionListener(listenForEnterButton);
+		buttonEnter.addActionListener(listenForEnterButton);
 	}
 	
 	public String getTextFieldContent(){

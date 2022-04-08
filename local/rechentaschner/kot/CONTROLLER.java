@@ -10,6 +10,7 @@ import java.util.Random;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 import javax.swing.*;
 
 /*
@@ -92,14 +93,21 @@ public class CONTROLLER implements ActionListener {
 
 			model.inkrementieren(rand.nextInt(500) - 250);
 			view.switchLabels();
+			System.out.println("switch");
 		}
 
 		if (e.getActionCommand().equals("⮒")) {
 			
-			String equation = view.getTextfieldContent();
+			String equation = view.getTextFieldContent();
 			ScriptEngineManager mgr = new ScriptEngineManager();
 		    ScriptEngine engine = mgr.getEngineByName("JavaScript");
-		    String res = engine.eval(equation);
+		    String res = "";
+			try {
+				res = (String) engine.eval(equation);
+			} catch (ScriptException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 			model.inkrementieren(Integer.valueOf(res));
 		}
 
